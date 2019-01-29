@@ -1,0 +1,883 @@
+
+	<!DOCTYPE html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="application-name" content="CUGB PT"/>
+
+		<base href="http://pt.cugb.edu.cn/torrents.php" />
+
+		<title>种子 :: CUGB PT</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="styles/mediumfont.css" type="text/css" />
+		<link rel="stylesheet" href="styles/sprites.css" type="text/css" />
+		<link rel="stylesheet" href="pic/forum_pic/chs/forumsprites.css" type="text/css" />
+		<link rel="stylesheet" href="styles/curtain_imageresizer.css" type="text/css" />
+		<link rel="stylesheet" href="styles/cugbpt/DomTT.css" type="text/css" />
+				<link rel="stylesheet" href="pic/category/cugb/catsprites.css" type="text/css" />
+				<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="bootstrap/bootstrap-select.min.css">
+		<link rel="stylesheet" href="bootstrap/bootstrap-toggle.min.css">
+		<link rel="stylesheet" href="bootstrap/buttons.min.css">
+		<link rel="stylesheet" href="bootstrap/font-awesome.min.css">
+		<link rel="stylesheet" href="styles/basicstyle.css">
+		<script type="text/javascript" src="bootstrap/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="javascript/jquery.slimscroll.min.js"></script>
+		<script src="bootstrap/bootstrap.min.js"></script>
+		<script src="bootstrap/bootstrap-checkbox.min.js"></script>
+		<script src="bootstrap/bootstrap-toggle.min.js"></script>
+		<script src="bootstrap/bootstrap-select.min.js"></script>
+		<link rel="stylesheet" href="styles/cugbpt/theme.css" type="text/css" />
+		<script type="text/javascript" src="javascript/curtain_imageresizer.js"></script>
+		<script type="text/javascript" src="javascript/ajaxbasic.js"></script>
+		<script type="text/javascript" src="javascript/common.js"></script>
+		<script type="text/javascript" src="javascript/domLib.js"></script>
+		<script type="text/javascript" src="javascript/domTT.js"></script>
+		<script type="text/javascript" src="javascript/domTT_drag.js"></script>
+		<script type="text/javascript" src="javascript/fadomatic.js"></script>
+		<script type="text/javascript" src="javascript/scrollcontrol.js" ></script>
+		<script type="text/javascript" src="javascript/sort.js" ></script>
+		<script type="text/javascript" src="javascript/clappr/clappr.min.js" ></script>
+		<style type='text/css'>
+
+</style>	</head>
+	<body>
+	<!--uT download Modal -->
+<div class="modal fade" id="uTorrentDownloadModal" tabindex="-1" role="dialog" aria-labelledby="uTorrentDownloadModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="uTorrentDownloadModalLabel">下载uTorrent</h4>
+			</div>
+			<div class="modal-body">
+        		<script>
+        		$("#uTorrentDownloadModal").on("show.bs.modal", function() {
+					$("#uTorrentDownloadModal .modal-body").load("downloads/ut/body.html");
+					$("#uTorrentDownloadModal .modal-footer").load("downloads/ut/footer.html");
+				});
+				</script>
+			</div>
+			<div class="modal-footer">
+			</div>
+		</div>
+	</div>
+</div>
+		<script>if (!!window.ActiveXObject || "ActiveXObject" in window)document.write('<span style="font-size:40px;">我们不保证对您的浏览器的支持情况，请使用现代浏览器访问本站</span>');</script>
+		<div id="headerLogoContainer" class="container">
+		<div id="cugbnetInform" style="float: right;position: relative;top: 103px;">
+				<a href="http://pt.cugb.edu.cn/cugbnet.php"><img style="height: 100px;" src="pic/cugbnet_start.png"></a>
+			</div>			<div class="clear">
+									<div class="logo">CUGB PT</div>
+					<div class="slogan">欢迎新同学～～～</div>
+								</div>
+				<div class="clear nowrap" align="right" valign="middle">
+								</div>
+			</div>
+
+		<div id="headerNavContainer" class="container">
+					<div id="navi" class="navbar navbar-default navbar-static-top navbar-custom" role="navigation">
+        		<div class="navbar-collapse collapse">
+            		<ul class="nav navbar-nav">
+						<li><a href="index.php">首页</a></li><li><a href="forums.php">内部论坛</a></li><li class="active"><a  href="torrents.php">种子区</a></li><li><a  href="offers.php">候选</a></li><li><a  href="viewrequests.php">求种</a></li><li><a  href="upload.php">发种</a></li><li><a  href="topten.php">排行榜</a></li><li><a  href="log.php">运行日志</a></li><li><a href="rules.php">全站规则</a></li><li><a href="faq.php">常见问题</a></li><li><a  href="staff.php">STAFF</a></li>					</ul>
+					<ul class="nav navbar-nav navbar-right" style="margin-right:0px;"><li><a  href="cugbnet.php">晶矿兑网关流量</a></li></ul>				</div>
+			</div>
+
+	<div id="info_block">
+	<table width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
+		<td class="bottom" align="left"><span class="medium">
+			欢迎回来, <span class="nowrap"><a  href="userdetails.php?id=549" class='PowerUser_Name' ><b>rtq</b></a></span>			[<a href="logout.php" title="注销所有登录会话">退出</a>]
+			[<a href="usercp.php">控制面板</a>]
+						[<a href="torrents.php?inclbookmarked=1&amp;allsec=1&amp;incldead=0">我的收藏</a>]
+							[<a id="game" href="bakatest.php"><b><font color="red">每日签到</font></b></a>]
+						[<a href="javascript: IPV6mark();" title=Switch>下载模式:<b  id="trackerstate" >无活动</b></a>]
+			<br />
+		<a href="mybonus.php"><font class = 'color_bonus'>晶矿:</font>6,361.6</a>&nbsp;
+		<a href="invite.php"><font class = 'color_invite'>邀请:</font>0/0</a>&nbsp;&nbsp;
+		<a href="myhr.php"><font class='color_bonus'>H&amp;R:</font>0/1</a>
+		<font class="color_ratio">&nbsp;分享率:</font>2.138		<font class='color_uploaded'>&nbsp;&nbsp;上传量:</font>263.51GB		<font class='color_downloaded'>&nbsp;&nbsp;下载量:</font>123.23GB		<font class='color_active'>&nbsp;当前活动:</font>&nbsp;
+		<a href="getusertorrentlist.php?type=seeding"><span class="glyphicon glyphicon-arrow-up" title="当前做种"></span>0</a>&nbsp;
+		<a href="getusertorrentlist.php?type=leeching"><span class="glyphicon glyphicon-arrow-down" title="当前下载"></span>0</a>&nbsp;&nbsp;
+				</span>
+	</td>
+
+	<td class="bottom" align="right"><span class="medium">
+		<a href="#" data-toggle="modal" data-target="#uTorrentDownloadModal"><i class="fa fa-download" aria-hidden="true"></i>还没有uTorrent？立即下载</a>
+	<br />
+
+<a href="messages.php"><i class="fa fa-envelope" aria-hidden="true"></i>收件箱</a>  <a href="friends.php"><i class="fa fa-users" aria-hidden="true"></i>好友列表</a> <a href="getrss.php"><i class="fa fa-rss-square" aria-hidden="true"></i>获取RSS</a>
+	</span></td>
+	</tr></table></div></div><!--Header Info Block End-->
+
+
+<div id="MainContainer" class="container">
+<div id="main" class="well no-border-radius">
+
+<table width="100%"><tr><td><form method="get" name="searchbox" action="/torrents.php">
+	<table border="1" class="searchbox" cellspacing="0" cellpadding="5" width="100%">
+		<tbody>
+		<tr>
+		<td class="colhead" align="center" colspan="2"><a href="javascript: klappe_search('searchboxmain')"><img  class="plus" src="pic/trans.gif" id="picsearchboxmain" alt="Show/Hide" />搜索箱(点击开启)<img  class="plus" src="pic/trans.gif" id="pic2searchboxmain" alt="Show/Hide" /></a></td>
+		</tr></tbody>
+
+
+
+				<tbody id="k2searchboxmain"  >
+		<tr>
+			<td class="rowfollow"  align="center" colspan="2" >
+				<table>
+					<tr><td align="center" class="bottom" width="60" style="padding-bottom: 4px; padding-left: 10px;"><a href="?cat=401"><img class="c_movies" src="pic/cattrans.gif" alt="电影" title="电影" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td align="center" class="bottom" width="60" style="padding-bottom: 4px; padding-left: 10px;"><a href="?cat=410"><img class="c_pcgames" src="pic/cattrans.gif" alt="游戏" title="游戏" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td align="center" class="bottom" width="60" style="padding-bottom: 4px; padding-left: 10px;"><a href="?cat=402"><img class="c_tvseries" src="pic/cattrans.gif" alt="电视剧" title="电视剧" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td align="center" class="bottom" width="60" style="padding-bottom: 4px; padding-left: 10px;"><a href="?cat=403"><img class="c_tvshows" src="pic/cattrans.gif" alt="综艺" title="综艺" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td align="center" class="bottom" width="60" style="padding-bottom: 4px; padding-left: 10px;"><a href="?cat=405"><img class="c_anime" src="pic/cattrans.gif" alt="动漫" title="动漫" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td align="center" class="bottom" width="60" style="padding-bottom: 4px; padding-left: 10px;"><a href="?cat=404"><img class="c_doc" src="pic/cattrans.gif" alt="纪录片" title="纪录片" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td align="center" class="bottom" width="60" style="padding-bottom: 4px; padding-left: 10px;"><a href="?cat=408"><img class="c_hqaudio" src="pic/cattrans.gif" alt="音乐" title="音乐" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td align="center" class="bottom" width="60" style="padding-bottom: 4px; padding-left: 10px;"><a href="?cat=411"><img class="c_software" src="pic/cattrans.gif" alt="软件" title="软件" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td align="center" class="bottom" width="60" style="padding-bottom: 4px; padding-left: 10px;"><a href="?cat=407"><img class="c_sports" src="pic/cattrans.gif" alt="体育" title="体育" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td align="center" class="bottom" width="60" style="padding-bottom: 4px; padding-left: 10px;"><a href="?cat=406"><img class="c_mv" src="pic/cattrans.gif" alt="MV" title="MV" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td align="center" class="bottom" width="60" style="padding-bottom: 4px; padding-left: 10px;"><a href="?cat=412"><img class="c_study" src="pic/cattrans.gif" alt="学习" title="学习" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td align="center" class="bottom" width="60" style="padding-bottom: 4px; padding-left: 10px;"><a href="?cat=409"><img class="c_other" src="pic/cattrans.gif" alt="其他" title="其他" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+</tr>
+				</table>
+							</td>
+
+
+
+		</tr>
+		</tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<tbody id="ksearchboxmain" style="display:none">
+		<tr>
+			<td class="rowfollow" align="left">
+				<table>
+					<tr><td class="embedded" colspan="12" align="left"><b>类型:</b></td></tr><tr><td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="cat401" name="cat401" value="1" /><a href="?cat=401"><img class="c_movies" src="pic/cattrans.gif" alt="电影" title="电影" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="cat410" name="cat410" value="1" /><a href="?cat=410"><img class="c_pcgames" src="pic/cattrans.gif" alt="游戏" title="游戏" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="cat402" name="cat402" value="1" /><a href="?cat=402"><img class="c_tvseries" src="pic/cattrans.gif" alt="电视剧" title="电视剧" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="cat403" name="cat403" value="1" /><a href="?cat=403"><img class="c_tvshows" src="pic/cattrans.gif" alt="综艺" title="综艺" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="cat405" name="cat405" value="1" /><a href="?cat=405"><img class="c_anime" src="pic/cattrans.gif" alt="动漫" title="动漫" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="cat404" name="cat404" value="1" /><a href="?cat=404"><img class="c_doc" src="pic/cattrans.gif" alt="纪录片" title="纪录片" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="cat408" name="cat408" value="1" /><a href="?cat=408"><img class="c_hqaudio" src="pic/cattrans.gif" alt="音乐" title="音乐" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="cat411" name="cat411" value="1" /><a href="?cat=411"><img class="c_software" src="pic/cattrans.gif" alt="软件" title="软件" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="cat407" name="cat407" value="1" /><a href="?cat=407"><img class="c_sports" src="pic/cattrans.gif" alt="体育" title="体育" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="cat406" name="cat406" value="1" /><a href="?cat=406"><img class="c_mv" src="pic/cattrans.gif" alt="MV" title="MV" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="cat412" name="cat412" value="1" /><a href="?cat=412"><img class="c_study" src="pic/cattrans.gif" alt="学习" title="学习" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="cat409" name="cat409" value="1" /><a href="?cat=409"><img class="c_other" src="pic/cattrans.gif" alt="其他" title="其他" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td colspan="2" class="bottom" align="left" style="padding-left: 15px"><input name="cat_check" value='全选' class="btn medium" type="button" onclick="javascript:SetChecked('cat','cat_check','全选','全不选',-1,10)" /></td>
+</tr><tr><td class="embedded" colspan="12" align="left"><b>地区:</b></td></tr><tr><td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="source7" name="source7" value="1" /><a title="大陆" href="?source=7">大陆</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="source8" name="source8" value="1" /><a title="港台" href="?source=8">港台</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="source9" name="source9" value="1" /><a title="欧美" href="?source=9">欧美</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="source10" name="source10" value="1" /><a title="日韩" href="?source=10">日韩</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="source11" name="source11" value="1" /><a title="其他地区" href="?source=11">其他地区</a></td>
+<td colspan="2" class="bottom" align="left" style="padding-left: 15px"><input name="source_check" value='全选' class="btn medium" type="button" onclick="javascript:SetChecked('source','source_check','全选','全不选',-1,10)" /></td>
+</tr><tr><td class="embedded" colspan="12" align="left"><b>运行平台:</b></td></tr><tr><td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="medium10" name="medium10" value="1" /><a title="Windows" href="?medium=10">Windows</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="medium12" name="medium12" value="1" /><a title="Mac" href="?medium=12">Mac</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="medium17" name="medium17" value="1" /><a title="iOS" href="?medium=17">iOS</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="medium11" name="medium11" value="1" /><a title="Linux" href="?medium=11">Linux</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="medium13" name="medium13" value="1" /><a title="Mobile" href="?medium=13">Mobile</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="medium15" name="medium15" value="1" /><a title="Android" href="?medium=15">Android</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="medium14" name="medium14" value="1" /><a title="其他平台" href="?medium=14">其他平台</a></td>
+<td colspan="2" class="bottom" align="left" style="padding-left: 15px"><input name="medium_check" value='全选' class="btn medium" type="button" onclick="javascript:SetChecked('medium','medium_check','全选','全不选',-1,10)" /></td>
+</tr><tr><td class="embedded" colspan="12" align="left"><b>分辨率:</b></td></tr><tr><td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="standard17" name="standard17" value="1" /><a title="4K" href="?standard=17">4K</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="standard16" name="standard16" value="1" /><a title="2K" href="?standard=16">2K</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="standard1" name="standard1" value="1" /><a title="1080P" href="?standard=1">1080P</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="standard3" name="standard3" value="1" /><a title="720P" href="?standard=3">720P</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="standard5" name="standard5" value="1" /><a title="480P" href="?standard=5">480P</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="standard12" name="standard12" value="1" /><a title="1024*576" href="?standard=12">1024*576</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="standard13" name="standard13" value="1" /><a title="848*480" href="?standard=13">848*480</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="standard14" name="standard14" value="1" /><a title="640*480" href="?standard=14">640*480</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="standard15" name="standard15" value="1" /><a title="704*396" href="?standard=15">704*396</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="standard7" name="standard7" value="1" /><a title="有损音频" href="?standard=7">有损音频</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="standard8" name="standard8" value="1" /><a title="无损音频" href="?standard=8">无损音频</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="standard4" name="standard4" value="1" /><a title="枪版视频" href="?standard=4">枪版视频</a></td>
+</tr><tr><td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="standard6" name="standard6" value="1" /><a title="其他码率" href="?standard=6">其他码率</a></td>
+<td colspan="2" class="bottom" align="left" style="padding-left: 15px"><input name="standard_check" value='全选' class="btn medium" type="button" onclick="javascript:SetChecked('standard','standard_check','全选','全不选',-1,10)" /></td>
+</tr><tr><td class="embedded" colspan="12" align="left"><b>连载状况:</b></td></tr><tr><td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="processing3" name="processing3" value="1" /><a title="剧场OVA" href="?processing=3">剧场OVA</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="processing4" name="processing4" value="1" /><a title="完结剧集" href="?processing=4">完结剧集</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="processing5" name="processing5" value="1" /><a title="连载剧集" href="?processing=5">连载剧集</a></td>
+<td colspan="2" class="bottom" align="left" style="padding-left: 15px"><input name="processing_check" value='全选' class="btn medium" type="button" onclick="javascript:SetChecked('processing','processing_check','全选','全不选',-1,10)" /></td>
+</tr><tr><td class="embedded" colspan="12" align="left"><b>文件格式:</b></td></tr><tr><td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="team11" name="team11" value="1" /><a title="TS/TP" href="?team=11">TS/TP</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="team6" name="team6" value="1" /><a title="MKV" href="?team=6">MKV</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="team7" name="team7" value="1" /><a title="RMVB" href="?team=7">RMVB</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="team8" name="team8" value="1" /><a title="MP4" href="?team=8">MP4</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="team9" name="team9" value="1" /><a title="AVI" href="?team=9">AVI</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="team10" name="team10" value="1" /><a title="MPEG" href="?team=10">MPEG</a></td>
+<td align="left" class="bottom" style="white-space: nowrap;padding-bottom: 4px; padding-left:10px;"><input type="checkbox" id="team14" name="team14" value="1" /><a title="FLV" href="?team=14">FLV</a></td>
+<td colspan="2" class="bottom" align="left" style="padding-left: 15px"><input name="team_check" value='全选' class="btn medium" type="button" onclick="javascript:SetChecked('team','team_check','全选','全不选',-1,10)" /></td>
+</tr>				</table>
+			</td>
+
+			<td class="rowfollow" valign="middle">
+				<table>
+					<tr>
+						<td class="bottom" style="padding: 1px;padding-left: 10px">
+							<font class="medium">显示断种/活种？</font>
+						</td>
+				 	</tr>
+					<tr>
+						<td class="bottom" type ="hide" style="padding: 1px;padding-left: 10px">
+							<select class="med" name="incldead" style="width: 100px;" >
+								<option value="0">包括断种</option>
+								<option value="1" selected="selected">活种 </option>
+								<option value="2">断种</option>
+								<option value="3">无IMDB</option>
+															</select>
+						</td>
+				 	</tr>
+
+				 	<tr>
+						<td class="bottom" style="padding: 1px;padding-left: 10px">
+							<br />
+						</td>
+				 	</tr>
+					<tr>
+						<td class="bottom" style="padding: 1px;padding-left: 10px">
+							<font class="medium">显示促销种子？</font>
+						</td>
+				 	</tr>
+				 	<tr>
+						<td class="bottom" style="padding: 1px;padding-left: 10px">
+							<select class="med" name="spstate" style="width: 100px;">
+								<option value="0">全部</option>
+<option value="1">普通</option><option value="8">全部促销</option><option value="2">免费</option><option value="3">2X</option><option value="4">2X免费</option><option value="5">50%</option><option value="6">2X 50%</option><option value="7">30%</option>							</select>
+						</td>
+					</tr>
+
+
+
+
+					<tr>
+						<td class="bottom" style="padding: 1px;padding-left: 10px">
+							<br />
+						</td>
+				 	</tr>
+					<tr>
+						<td class="bottom" style="padding: 1px;padding-left: 10px">
+							<font class="medium">挑选种子？</font>
+						</td>
+				 	</tr>
+				 	<tr>
+						<td class="bottom" style="padding: 1px;padding-left: 10px">
+							<select class="med" name="picktype" style="width: 100px;">
+								<option value="0">全部</option>
+								<option value="1">热门</option>
+								<option value="2">经典</option>
+								<option value="3">推荐</option>
+								<option value="4">普通</option>
+							</select>
+						</td>
+					</tr>
+
+
+				 	<tr>
+						<td class="bottom" style="padding: 1px;padding-left: 10px">
+							<br />
+						</td>
+					</tr>
+					<tr>
+						<td class="bottom" style="padding: 1px;padding-left: 10px">
+							<font class="medium">显示收藏？</font>
+						</td>
+				 	</tr>
+				 	<tr>
+						<td class="bottom" style="padding: 1px;padding-left: 10px">
+							<select class="med" name="inclbookmarked" style="width: 100px;">
+								<option value="0">全部</option>
+								<option value="1">仅收藏</option>
+								<option value="2">仅未收藏</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		</tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+		<tbody>
+		<tr>
+			<td class="rowfollow" align="center">
+				<table>
+					<tr>
+						<td class="embedded">
+							搜索关键字:&nbsp;&nbsp;
+						</td>
+						<td class="embedded">
+							<table>
+								<tr>
+									<td class="embedded">
+										<input id="searchinput" name="search" type="text" value="" autocomplete="off" style="width: 300px" ondblclick="suggest(event.keyCode,this.value);" onkeyup="suggest(event.keyCode,this.value);" onkeypress="return noenter(event.keyCode);" x-webkit-speech />
+										<script src="javascript/suggest.js" type="text/javascript"></script>
+										<div id="suggcontainer" style="text-align: left; width:300px;  display: none;">
+											<div id="suggestions" style="width:300px; border: 1px solid rgb(119, 119, 119); cursor: default; position: absolute; color: rgb(0,0,0); background-color: rgb(255, 255, 255);"></div>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td class="embedded">
+							&nbsp; 范围：
+							<select name="search_area">
+								<option value="0">标题</option>
+
+																<option value="3">发布者</option>
+								<option value="4">电影信息</option>
+								<option value="5">影片编号</option>
+								<option value="6">种子HASH</option>
+								<option value="7">活动种子</option>
+
+							</select>
+
+
+
+
+
+
+														 匹配模式：
+							<select name="search_mode" style="width: 60px;">
+								<option value="0">与</option>
+								<option value="1">或</option>
+								<option value="2">准确</option>
+							</select>
+
+
+													</td>
+					</tr>
+				</table>
+			</td>
+			<td class="rowfollow" align="center">
+				<input type="submit" class="btn" value="启动检索！" />
+
+			</td>
+		</tr>
+		</tbody>
+	</table>
+	</form>
+<p align="center"><font class="gray"><b title="Alt+Pageup">&lt;&lt;&nbsp;上一页</b></font>&nbsp;&nbsp;&nbsp;&nbsp;<a href="?inclbookmarked=0&amp;incldead=1&amp;spstate=0&amp;page=5"><b>随便看看</b></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="?inclbookmarked=0&amp;incldead=1&amp;spstate=0&amp;page=1"><b title="Alt+Pagedown">下一页&nbsp;&gt;&gt;</b></a><br /><font class="gray"><b>1&nbsp;-&nbsp;50</b></font> | <a href="?inclbookmarked=0&amp;incldead=1&amp;spstate=0&amp;page=1"><b>51&nbsp;-&nbsp;100</b></a> | <a href="?inclbookmarked=0&amp;incldead=1&amp;spstate=0&amp;page=2"><b>101&nbsp;-&nbsp;150</b></a> | ... | <a href="?inclbookmarked=0&amp;incldead=1&amp;spstate=0&amp;page=34"><b>1701&nbsp;-&nbsp;1750</b></a> | <a href="?inclbookmarked=0&amp;incldead=1&amp;spstate=0&amp;page=35"><b>1751&nbsp;-&nbsp;1800</b></a> | <a href="?inclbookmarked=0&amp;incldead=1&amp;spstate=0&amp;page=36"><b>1801&nbsp;-&nbsp;1803</b></a></p>
+<table class="table table-hover">
+
+<tr>
+<td align="center">类型</td>
+<td align="center"><a href="?sort=1&amp;type=asc">标题</a><a href="?sort=11&amp;type=desc">[评分]</a></td>
+
+<td><a href="?sort=7&amp;type=desc"><img class="seeders" src="pic/trans.gif" alt="seeders" title="种子数" /></a></td>
+<td><a href="?sort=8&amp;type=desc"><img class="leechers" src="pic/trans.gif" alt="leechers" title="下载数" /></a></td>
+<td><a href="?sort=6&amp;type=desc"><img class="snatched" src="pic/trans.gif" alt="snatched" title="完成数" /></a></td>
+<td><a href="?sort=10&amp;type=desc"><img class="unsnatched" src="pic/trans.gif" alt="unsnatched" title="未完成数" /></a></td>
+
+
+
+
+
+<td width="15%" align="center" COLSPAN ="3">
+<div class="row">
+	<a href="?sort=9&amp;type=desc">发布者</a>
+</div>
+<div class="row">
+<a href="?sort=3&amp;type=desc"><img class="comments" src="pic/trans.gif" alt="comments" title="评论数" /></a>
+
+
+<a href="?sort=4&amp;type=desc"><img class="time" src="pic/trans.gif" alt="time" title="存活时间" /></a>
+<a href="?sort=5&amp;type=desc"><img class="size" src="pic/trans.gif" alt="size" title="大小" /></a>
+</div>
+</td>
+</tr>
+
+<tr>
+<td valign="middle"><a href="?cat=402"><img class="c_tvseries" src="pic/cattrans.gif" alt="电视剧" title="电视剧" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[连载剧集][大陆][白夜追凶/Day.And.Night][E06-E10][1080p/WEB/MP4][国语/中字][MTTV]"  href="details.php?id=9810&amp;hit=1"><b>[连载剧集][大陆][白夜追凶/Day.And.Night][E06-E10][1080p/WEB/MP4][国语/中字][MTTV]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[连载剧集][MP4][1080P]白夜追凶 第06-10集 主演: 潘粤明 王泷正 梁缘 吕晓霖 仅限教育网转载，转自麦田PT 豆瓣8.9分</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9810"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark0"  href="javascript: bookmark(9810,0);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9810&amp;hit=1&amp;dllist=1#seeders">3</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9810"><b>3</b></a></td>
+<td><b><a  href="viewsnatches.php?all=1&id=9810"><b>1</b></a></td>
+<td  COLSPAN ="3" align="center"><div class="row"><i>匿名</i></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9810&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-09-08 08:16:41">6时9分</span>&nbsp;&nbsp;1.98GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=402"><img class="c_tvseries" src="pic/cattrans.gif" alt="电视剧" title="电视剧" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[连载剧集][大陆][白夜追凶/Day.And.Night][E01-E05][1080p/WEB/MP4][国语/中字][MTTV]"  href="details.php?id=9809&amp;hit=1"><b>[连载剧集][大陆][白夜追凶/Day.And.Night][E01-E05][1080p/WEB/MP4][国语/中字][MTTV]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[连载剧集][MP4][1080P]白夜追凶 第01-05集 主演: 潘粤明 王泷正 梁缘 吕晓霖 仅限教育网转载，转自麦田PT 豆瓣8.9分</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9809"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark1"  href="javascript: bookmark(9809,1);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9809&amp;hit=1&amp;dllist=1#seeders">4</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9809"><b>4</b></a></td>
+<td>0</td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3758" class='EliteUser_Name' ><b>三月1104</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9809&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-09-08 08:13:24">6时12分</span>&nbsp;&nbsp;2.13GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=404"><img class="c_doc" src="pic/cattrans.gif" alt="纪录片" title="纪录片" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[其他][日韩][2017][NHK][七百三十一部队的真相 “精英”医者与人体试验][中文字幕]"  href="details.php?id=9801&amp;hit=1"><b>[其他][日韩][2017][NHK][七百三十一部队的真相 “精英”医者与人体试验][中文字幕]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br />[剧场OVA][MP4][720P]</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9801"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark2"  href="javascript: bookmark(9801,2);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9801&amp;hit=1&amp;dllist=1#seeders">3</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9801"><b>3</b></a></td>
+<td>0</td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=22" class='InsaneUser_Name' ><b>1004132112</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9801&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-09-06 15:25:52">1天23时</span>&nbsp;&nbsp;549.99MB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=402"><img class="c_tvseries" src="pic/cattrans.gif" alt="电视剧" title="电视剧" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[剧集合辑][日韩][太阳的后裔/Descendants of the Sun][16][1080P/WEB-DL/MP4][韩语/中字][OurTV]"  href="details.php?id=9800&amp;hit=1"><b>[剧集合辑][日韩][太阳的后裔/Descendants of the Sun][16][1080P/WEB-DL/MP4][韩语/中字][OurTV]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[完结剧集][MP4][1080P]主演：宋慧乔 宋仲基</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9800"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark3"  href="javascript: bookmark(9800,3);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9800&amp;hit=1&amp;dllist=1#seeders">2</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9800"><b>4</b></a></td>
+<td>0</td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3758" class='EliteUser_Name' ><b>三月1104</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9800&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-09-06 13:10:10">2天1时</span>&nbsp;&nbsp;8.18GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=407"><img class="c_sports" src="pic/cattrans.gif" alt="体育" title="体育" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[篮球][欧美][2003-2004赛季 NBA总决赛 湖人VS活塞 全五场(含颁奖)][ABC/英语]"  href="details.php?id=9799&amp;hit=1"><b>[篮球][欧美][2003-2004赛季 NBA总决赛 湖人VS活塞 全五场(含颁奖)][ABC/英语]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br />[AVI][其他码率]紫金回忆：OK组合分道扬镳之战</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9799"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark4"  href="javascript: bookmark(9799,4);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9799&amp;hit=1&amp;dllist=1#seeders">4</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9799"><b>6</b></a></td>
+<td>0</td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3758" class='EliteUser_Name' ><b>三月1104</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9799&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-09-06 12:58:07">2天1时</span>&nbsp;&nbsp;6.85GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=401"><img class="c_movies" src="pic/cattrans.gif" alt="电影" title="电影" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[电影正篇][欧美][加勒比海盗5：死无对证][Pirates.of.the.Caribbean.Dead.Men.Tell.No.Tales.2017.720p.]"  href="details.php?id=9798&amp;hit=1"> <b>[<font class='hot'>热门</font>]</b><b>[电影正篇][欧美][加勒比海盗5：死无对证][Pirates.of.the.Caribbean.Dead.Men.Tell.No.Tales.2017.720p.]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b><b>[<font class='striking'>字幕</font>]</b>[MKV][720P][动作/奇幻/冒险][英语]</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9798"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark5"  href="javascript: bookmark(9798,5);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9798&amp;hit=1&amp;dllist=1#seeders">16</a></b></td>
+<td ><b><a  href="details.php?id=9798&amp;hit=1&amp;dllist=1#leechers">1</a></b></td>
+<td><b><a  href="viewsnatches.php?id=9798"><b>54</b></a></td>
+<td><b><a  href="viewsnatches.php?all=1&id=9798"><b>3</b></a></td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=4155" class='InsaneUser_Name' ><b>1004142223</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9798&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-09-06 09:47:58">2天4时</span>&nbsp;&nbsp;3.97GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=403"><img class="c_tvshows" src="pic/cattrans.gif" alt="综艺" title="综艺" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[综艺娱乐][大陆][江苏卫视 我们相爱吧 第三季][JSTV.We.Are.In.Love.3][S03][1080p/YouTube/mp4][国语][中文字幕][全14期合集]"  href="details.php?id=9797&amp;hit=1"><b>[综艺娱乐][大陆][江苏卫视 我们相爱吧 第三季][JSTV.We.Are.In.Love.3][S03][1080p/YouTube/mp4][国语][中文字幕][全14期合集]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[MP4][1080P]我们相爱吧第三季合集</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9797"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark6"  href="javascript: bookmark(9797,6);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9797&amp;hit=1&amp;dllist=1#seeders">2</a></b></td>
+<td ><b><a  href="details.php?id=9797&amp;hit=1&amp;dllist=1#leechers">1</a></b></td>
+<td><b><a  href="viewsnatches.php?id=9797"><b>2</b></a></td>
+<td><b><a  href="viewsnatches.php?all=1&id=9797"><b>2</b></a></td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3758" class='EliteUser_Name' ><b>三月1104</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9797&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-09-05 13:51:25">3天0时</span>&nbsp;&nbsp;22.41GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=403"><img class="c_tvshows" src="pic/cattrans.gif" alt="综艺" title="综艺" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[综艺娱乐][大陆][2017-08-12][火星情报局第三季][S03E07][MP4/1080P/YouKu][国语/中文字幕]"  href="details.php?id=9792&amp;hit=1"><b>[综艺娱乐][大陆][2017-08-12][火星情报局第三季][S03E07][MP4/1080P/YouKu][国语/中文字幕]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[MP4][1080P][火星情报局第三季第七期][黄蓉的棺材板压不住了]</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9792"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark7"  href="javascript: bookmark(9792,7);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9792&amp;hit=1&amp;dllist=1#seeders">4</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9792"><b>9</b></a></td>
+<td><b><a  href="viewsnatches.php?all=1&id=9792"><b>2</b></a></td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3758" class='EliteUser_Name' ><b>三月1104</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9792&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-09-04 22:42:24">3天15时</span>&nbsp;&nbsp;1.54GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=403"><img class="c_tvshows" src="pic/cattrans.gif" alt="综艺" title="综艺" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[综艺娱乐][大陆][2017-09-03][江苏卫视 蒙面唱将猜猜猜 第二季][MP4/1080P/Youtube][国语/中文字幕]"  href="details.php?id=9791&amp;hit=1"><b>[综艺娱乐][大陆][2017-09-03][江苏卫视 蒙面唱将猜猜猜 第二季][MP4/1080P/Youtube][国语/中文字幕]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[MP4][1080P][第1期：宝宝自曝吻过baby 黄晓明吃醋要封杀]</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9791"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark8"  href="javascript: bookmark(9791,8);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9791&amp;hit=1&amp;dllist=1#seeders">2</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9791"><b>9</b></a></td>
+<td>0</td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3758" class='EliteUser_Name' ><b>三月1104</b></a></span></div>
+<div class="row">
+<b><a href="details.php?id=9791&amp;hit=1&amp;cmtpage=1#startcomments" >7</a></b>&nbsp;&nbsp;<span title="2017-09-04 12:45:12">4天1时</span>&nbsp;&nbsp;2.14GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=403"><img class="c_tvshows" src="pic/cattrans.gif" alt="综艺" title="综艺" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[综艺娱乐][大陆][20170903]极限挑战第三季 第9期:他们真的回来了？-再闯极挑 Go Fighting EP.9[东方卫视官方高清]- YouTube"  href="details.php?id=9790&amp;hit=1"><b>[综艺娱乐][大陆][20170903]极限挑战第三季 第9期:他们真的回来了？-再闯极挑 Go Fighting EP.9[东方卫视官方高清]- YouTube</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br />[MP4][1080P]</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9790"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark9"  href="javascript: bookmark(9790,9);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9790&amp;hit=1&amp;dllist=1#seeders">8</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9790"><b>26</b></a></td>
+<td><b><a  href="viewsnatches.php?all=1&id=9790"><b>1</b></a></td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=770" class='PowerUser_Name' ><b>liu</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9790&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-09-04 10:37:31">4天3时</span>&nbsp;&nbsp;2.76GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=401"><img class="c_movies" src="pic/cattrans.gif" alt="电影" title="电影" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[电影正篇][大陆][三生三世十里桃花][Once.Upon.a.Time.2017.1080P.WEB-DL.x264.AAC-HQC]["  href="details.php?id=9781&amp;hit=1"> <b>[<font class='hot'>热门</font>]</b><b>[电影正篇][大陆][三生三世十里桃花][Once.Upon.a.Time.2017.1080P.WEB-DL.x264.AAC-HQC][</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>IMDB</font>]</b>[MP4][1080P]刘亦菲、杨洋等主演</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9781"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark10"  href="javascript: bookmark(9781,10);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9781&amp;hit=1&amp;dllist=1#seeders">5</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9781"><b>38</b></a></td>
+<td>0</td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=1124" class='CrazyUser_Name' ><b>MsBruce</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9781&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-09-03 19:30:02">4天18时</span>&nbsp;&nbsp;2.29GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=402"><img class="c_tvseries" src="pic/cattrans.gif" alt="电视剧" title="电视剧" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[剧集合辑][大陆][河神][Tientsin.Mystic.2017.WEB-DL.1080p.H264.AAC-npuer][全24集]"  href="details.php?id=9780&amp;hit=1"><b>[剧集合辑][大陆][河神][Tientsin.Mystic.2017.WEB-DL.1080p.H264.AAC-npuer][全24集]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[完结剧集][MP4][1080P]</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9780"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark11"  href="javascript: bookmark(9780,11);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9780&amp;hit=1&amp;dllist=1#seeders">3</a></b></td>
+<td ><b><a  href="details.php?id=9780&amp;hit=1&amp;dllist=1#leechers">2</a></b></td>
+<td><b><a  href="viewsnatches.php?id=9780"><b>15</b></a></td>
+<td><b><a  href="viewsnatches.php?all=1&id=9780"><b>5</b></a></td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=2527" class='VeteranUser_Name' ><b>xiaokunkun</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9780&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-09-03 14:17:29">5天0时</span>&nbsp;&nbsp;21.20GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=402"><img class="c_tvseries" src="pic/cattrans.gif" alt="电视剧" title="电视剧" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[连载剧集][大陆][春风十里不如你/Bei.Jing.Bei.Jing][E39-E40][1080p/WEB-DL/H264.AAC-XJCTV][国语/中文字幕]"  href="details.php?id=9779&amp;hit=1"><b>[连载剧集][大陆][春风十里不如你/Bei.Jing.Bei.Jing][E39-E40][1080p/WEB-DL/H264.AAC-XJCTV][国语/中文字幕]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[完结剧集][MP4][1080P]春风十里不如你 第39-40集 主演：周冬雨 / 张一山 / 尤靖茹 / 陈奕龙 / 魏健隆</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9779"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark12"  href="javascript: bookmark(9779,12);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9779&amp;hit=1&amp;dllist=1#seeders">4</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9779"><b>23</b></a></td>
+<td><b><a  href="viewsnatches.php?all=1&id=9779"><b>1</b></a></td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3758" class='EliteUser_Name' ><b>三月1104</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9779&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-09-03 10:01:27">5天4时</span>&nbsp;&nbsp;834.53MB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=403"><img class="c_tvshows" src="pic/cattrans.gif" alt="综艺" title="综艺" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[综艺娱乐][大陆][2017-09-01][浙江卫视 中国新歌声第二季/ZJTV.Sing! China Season Ⅱ][S02E08][1080p/MP4/YouTube][国语][中文字幕]"  href="details.php?id=9778&amp;hit=1"><b>[综艺娱乐][大陆][2017-09-01][浙江卫视 中国新歌声第二季/ZJTV.Sing! China Season Ⅱ][S02E08][1080p/MP4/YouTube][国语][中文字幕]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[MP4][720P]中国新歌声第2季第8期 郭沁治愈嗓音获大赞</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9778"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark13"  href="javascript: bookmark(9778,13);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9778&amp;hit=1&amp;dllist=1#seeders">3</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9778"><b>5</b></a></td>
+<td><b><a  href="viewsnatches.php?all=1&id=9778"><b>1</b></a></td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3758" class='EliteUser_Name' ><b>三月1104</b></a></span></div>
+<div class="row">
+<b><a href="details.php?id=9778&amp;hit=1&amp;cmtpage=1#startcomments" >2</a></b>&nbsp;&nbsp;<span title="2017-09-02 13:13:01">6天1时</span>&nbsp;&nbsp;1.26GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=403"><img class="c_tvshows" src="pic/cattrans.gif" alt="综艺" title="综艺" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[综艺娱乐][大陆][2017-08-20][江苏卫视 我们相爱吧 第三季][JSTV.We.Are.In.Love.3][S03E12][1080p/YouTube/mp4][国语][中文字幕]"  href="details.php?id=9777&amp;hit=1"><b>[综艺娱乐][大陆][2017-08-20][江苏卫视 我们相爱吧 第三季][JSTV.We.Are.In.Love.3][S03E12][1080p/YouTube/mp4][国语][中文字幕]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[MP4][1080P]吴昕为潘玮柏接长发 183Club合体爆明道往事 真诚CP上演海豚之恋</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9777"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark14"  href="javascript: bookmark(9777,14);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9777&amp;hit=1&amp;dllist=1#seeders">1</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9777"><b>3</b></a></td>
+<td>0</td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3758" class='EliteUser_Name' ><b>三月1104</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9777&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-09-02 12:55:06">6天1时</span>&nbsp;&nbsp;1.89GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=403"><img class="c_tvshows" src="pic/cattrans.gif" alt="综艺" title="综艺" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[综艺娱乐][大陆][2017-08-13][江苏卫视 我们相爱吧 第三季][JSTV.We.Are.In.Love.3][S03E11][1080p/YouTube/mp4][国语][中文字幕]"  href="details.php?id=9776&amp;hit=1"><b>[综艺娱乐][大陆][2017-08-13][江苏卫视 我们相爱吧 第三季][JSTV.We.Are.In.Love.3][S03E11][1080p/YouTube/mp4][国语][中文字幕]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[MP4][1080P]王鸥明道见“爸妈” 吴昕潘帅访好友 郑凯程晓玥情定意大利</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9776"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark15"  href="javascript: bookmark(9776,15);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9776&amp;hit=1&amp;dllist=1#seeders">1</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9776"><b>3</b></a></td>
+<td>0</td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3758" class='EliteUser_Name' ><b>三月1104</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9776&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-09-02 12:51:45">6天1时</span>&nbsp;&nbsp;2.16GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=403"><img class="c_tvshows" src="pic/cattrans.gif" alt="综艺" title="综艺" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[综艺娱乐][大陆][2017-08-06][江苏卫视 我们相爱吧 第三季][JSTV.We.Are.In.Love.3][S03E10][1080p/YouTube/mp4][国语][中文字幕]"  href="details.php?id=9775&amp;hit=1"><b>[综艺娱乐][大陆][2017-08-06][江苏卫视 我们相爱吧 第三季][JSTV.We.Are.In.Love.3][S03E10][1080p/YouTube/mp4][国语][中文字幕]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[MP4][1080P]“真诚CP”到访罗密欧与朱丽叶故乡 潘帅傲娇喊话吴昕：“写歌时想的都是你”</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9775"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark16"  href="javascript: bookmark(9775,16);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9775&amp;hit=1&amp;dllist=1#seeders">1</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9775"><b>3</b></a></td>
+<td>0</td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3758" class='EliteUser_Name' ><b>三月1104</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9775&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-09-02 12:49:29">6天1时</span>&nbsp;&nbsp;1.44GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=403"><img class="c_tvshows" src="pic/cattrans.gif" alt="综艺" title="综艺" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[综艺娱乐][大陆][2017-07-30][江苏卫视 我们相爱吧 第三季][JSTV.We.Are.In.Love.3][S03E09][1080p/YouTube/mp4][国语][中文字幕]"  href="details.php?id=9774&amp;hit=1"><b>[综艺娱乐][大陆][2017-07-30][江苏卫视 我们相爱吧 第三季][JSTV.We.Are.In.Love.3][S03E09][1080p/YouTube/mp4][国语][中文字幕]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[MP4][1080P]郑凯米兰发大招 天使CP亲密接触 潘玮柏策划“大事件”</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9774"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark17"  href="javascript: bookmark(9774,17);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9774&amp;hit=1&amp;dllist=1#seeders">1</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9774"><b>3</b></a></td>
+<td>0</td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3758" class='EliteUser_Name' ><b>三月1104</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9774&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-09-02 12:47:43">6天1时</span>&nbsp;&nbsp;1.69GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=403"><img class="c_tvshows" src="pic/cattrans.gif" alt="综艺" title="综艺" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[综艺娱乐][大陆][2017-07-23][江苏卫视 我们相爱吧 第三季][JSTV.We.Are.In.Love.3][S03E08][1080p/YouTube/mp4][国语][中文字幕]"  href="details.php?id=9773&amp;hit=1"><b>[综艺娱乐][大陆][2017-07-23][江苏卫视 我们相爱吧 第三季][JSTV.We.Are.In.Love.3][S03E08][1080p/YouTube/mp4][国语][中文字幕]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[MP4][1080P]“意外”大爆发 吴昕探班潘玮柏 王鸥明道约定到期 程晓玥准备神秘礼物</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9773"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark18"  href="javascript: bookmark(9773,18);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9773&amp;hit=1&amp;dllist=1#seeders">1</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9773"><b>3</b></a></td>
+<td>0</td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3758" class='EliteUser_Name' ><b>三月1104</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9773&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-09-02 12:45:17">6天1时</span>&nbsp;&nbsp;1.98GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=403"><img class="c_tvshows" src="pic/cattrans.gif" alt="综艺" title="综艺" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[综艺娱乐][大陆][2017-07-16][江苏卫视 我们相爱吧 第三季][JSTV.We.Are.In.Love.3][S03E07][1080p/YouTube/mp4][国语][中文字幕]"  href="details.php?id=9772&amp;hit=1"><b>[综艺娱乐][大陆][2017-07-16][江苏卫视 我们相爱吧 第三季][JSTV.We.Are.In.Love.3][S03E07][1080p/YouTube/mp4][国语][中文字幕]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[MP4][1080P]郑恺“搞丢”女友 潘玮柏吴昕遇吵架危机 明道帮王鸥克服恐水症</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9772"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark19"  href="javascript: bookmark(9772,19);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9772&amp;hit=1&amp;dllist=1#seeders">1</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9772"><b>3</b></a></td>
+<td>0</td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3758" class='EliteUser_Name' ><b>三月1104</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9772&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-09-02 12:37:23">6天1时</span>&nbsp;&nbsp;1.58GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=401"><img class="c_movies" src="pic/cattrans.gif" alt="电影" title="电影" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[电影正篇][大陆][绣春刀II：修罗战场][Brotherhood of Blades II-The Infernal Battlefield 2017 WEB-DL 4K H264 AAC-HDSWEB]"  href="details.php?id=9770&amp;hit=1"> <b>[<font class='hot'>热门</font>]</b><b>[电影正篇][大陆][绣春刀II：修罗战场][Brotherhood of Blades II-The Infernal Battlefield 2017 WEB-DL 4K H264 AAC-HDSWEB]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>IMDB</font>]</b>[MP4][1080P]绣春刀II：修罗战场/绣春刀：修罗场/绣春刀前传 4K[国语中字]｜主演：张震 杨幂 张译 雷佳音</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9770"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark20"  href="javascript: bookmark(9770,20);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9770&amp;hit=1&amp;dllist=1#seeders">13</a></b></td>
+<td ><b><a  href="details.php?id=9770&amp;hit=1&amp;dllist=1#leechers">1</a></b></td>
+<td><b><a  href="viewsnatches.php?id=9770"><b>79</b></a></td>
+<td><b><a  href="viewsnatches.php?all=1&id=9770"><b>3</b></a></td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=1124" class='CrazyUser_Name' ><b>MsBruce</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9770&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-09-02 10:59:15">6天3时</span>&nbsp;&nbsp;1.95GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=402"><img class="c_tvseries" src="pic/cattrans.gif" alt="电视剧" title="电视剧" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[连载剧集][大陆][春风十里不如你/Bei.Jing.Bei.Jing][E36-E38][1080p/WEB-DL/H264.AAC-MTTV][国语/中文字幕]"  href="details.php?id=9764&amp;hit=1"><b>[连载剧集][大陆][春风十里不如你/Bei.Jing.Bei.Jing][E36-E38][1080p/WEB-DL/H264.AAC-MTTV][国语/中文字幕]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[连载剧集][MP4][1080P]春风十里不如你 第36-38集 主演：周冬雨 / 张一山 / 尤靖茹 / 陈奕龙 / 魏健隆</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9764"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark21"  href="javascript: bookmark(9764,21);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9764&amp;hit=1&amp;dllist=1#seeders">5</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9764"><b>22</b></a></td>
+<td><b><a  href="viewsnatches.php?all=1&id=9764"><b>1</b></a></td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3758" class='EliteUser_Name' ><b>三月1104</b></a></span></div>
+<div class="row">
+<b><a href="details.php?id=9764&amp;hit=1&amp;cmtpage=1#startcomments" >8</a></b>&nbsp;&nbsp;<span title="2017-08-31 22:04:41">7天16时</span>&nbsp;&nbsp;1.42GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=401"><img class="c_movies" src="pic/cattrans.gif" alt="电影" title="电影" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[电影正篇][港台][失眠][2017]"  href="details.php?id=9758&amp;hit=1"><b>[电影正篇][港台][失眠][2017]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[MKV][720P][恐怖/惊悚][内嵌中文/粤语&amp;国语双频道]黄秋生&amp;邱礼涛</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9758"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark22"  href="javascript: bookmark(9758,22);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9758&amp;hit=1&amp;dllist=1#seeders">4</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9758"><b>15</b></a></td>
+<td>0</td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3228" class='CrazyUser_Name' ><b>阿垃垃圾君</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9758&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-08-31 14:19:48">8天0时</span>&nbsp;&nbsp;1.69GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=401"><img class="c_movies" src="pic/cattrans.gif" alt="电影" title="电影" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[电影正篇][欧美][女巫季节][Season of the Witch][2011]"  href="details.php?id=9757&amp;hit=1"><b>[电影正篇][欧美][女巫季节][Season of the Witch][2011]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[恐怖/冒险/动作][中英文字幕/英语]</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9757"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark23"  href="javascript: bookmark(9757,23);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9757&amp;hit=1&amp;dllist=1#seeders">1</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9757"><b>8</b></a></td>
+<td><b><a  href="viewsnatches.php?all=1&id=9757"><b>2</b></a></td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3228" class='CrazyUser_Name' ><b>阿垃垃圾君</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9757&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-08-31 11:55:55">8天2时</span>&nbsp;&nbsp;817.97MB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=411"><img class="c_software" src="pic/cattrans.gif" alt="软件" title="软件" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[欧美][Adobe Photoshop][CC 2017 18.0.0 x64][多国语言]"  href="details.php?id=9756&amp;hit=1"><b>[欧美][Adobe Photoshop][CC 2017 18.0.0 x64][多国语言]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /><b>[<font class='striking'>字幕</font>]</b>[Windows]</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9756"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark24"  href="javascript: bookmark(9756,24);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9756&amp;hit=1&amp;dllist=1#seeders">1</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9756"><b>5</b></a></td>
+<td>0</td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=1458" class='ExtremeUser_Name' ><b>Iamanorange</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9756&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-08-31 11:55:34">8天2时</span>&nbsp;&nbsp;1.36GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=401"><img class="c_movies" src="pic/cattrans.gif" alt="电影" title="电影" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[电影正篇][大陆][风声][2009]"  href="details.php?id=9755&amp;hit=1"><b>[电影正篇][大陆][风声][2009]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[RMVB][1024*576][剧情/战争][普通话/中文内嵌]</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9755"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark25"  href="javascript: bookmark(9755,25);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9755&amp;hit=1&amp;dllist=1#seeders">2</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9755"><b>12</b></a></td>
+<td>0</td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3228" class='CrazyUser_Name' ><b>阿垃垃圾君</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9755&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-08-31 11:49:02">8天2时</span>&nbsp;&nbsp;1.00GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=403"><img class="c_tvshows" src="pic/cattrans.gif" alt="综艺" title="综艺" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[综艺娱乐][大陆][2017-08-25][浙江卫视 中国新歌声第二季/ZJTV.Sing! China Season Ⅱ][S02E07][1080p/MP4/YouTube][国语][中文字幕]"  href="details.php?id=9753&amp;hit=1"><b>[综艺娱乐][大陆][2017-08-25][浙江卫视 中国新歌声第二季/ZJTV.Sing! China Season Ⅱ][S02E07][1080p/MP4/YouTube][国语][中文字幕]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[MP4][1080P]《中国新歌声2》第7期: 周杰伦陈奕迅天王对决引发“嘻哈大战” 那英口无遮拦遭杰伦刘欢“围攻”</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9753"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark26"  href="javascript: bookmark(9753,26);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9753&amp;hit=1&amp;dllist=1#seeders">3</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9753"><b>5</b></a></td>
+<td><b><a  href="viewsnatches.php?all=1&id=9753"><b>1</b></a></td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3758" class='EliteUser_Name' ><b>三月1104</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9753&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-08-30 23:32:38">8天14时</span>&nbsp;&nbsp;2.82GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=401"><img class="c_movies" src="pic/cattrans.gif" alt="电影" title="电影" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[电影正篇][港台][陀地驱魔人][2015]"  href="details.php?id=9736&amp;hit=1"><b>[电影正篇][港台][陀地驱魔人][2015]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[MP4][720P][剧情/恐怖][粤语/内嵌中文字幕]张家辉主演</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9736"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark27"  href="javascript: bookmark(9736,27);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9736&amp;hit=1&amp;dllist=1#seeders">1</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9736"><b>14</b></a></td>
+<td>0</td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3228" class='CrazyUser_Name' ><b>阿垃垃圾君</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9736&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-08-30 09:53:23">9天4时</span>&nbsp;&nbsp;2.27GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=401"><img class="c_movies" src="pic/cattrans.gif" alt="电影" title="电影" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[电影正篇][欧美][龙虾][The Lobster][2015]"  href="details.php?id=9735&amp;hit=1"><b>[电影正篇][欧美][龙虾][The Lobster][2015]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>IMDB</font>]</b>[MKV][720P][科幻/剧情/喜剧/][英语/内嵌中文]</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9735"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark28"  href="javascript: bookmark(9735,28);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9735&amp;hit=1&amp;dllist=1#seeders">4</a></b></td>
+<td ><b><a  href="details.php?id=9735&amp;hit=1&amp;dllist=1#leechers">1</a></b></td>
+<td><b><a  href="viewsnatches.php?id=9735"><b>23</b></a></td>
+<td><b><a  href="viewsnatches.php?all=1&id=9735"><b>1</b></a></td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3228" class='CrazyUser_Name' ><b>阿垃垃圾君</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9735&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-08-30 09:42:57">9天4时</span>&nbsp;&nbsp;3.50GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=402"><img class="c_tvseries" src="pic/cattrans.gif" alt="电视剧" title="电视剧" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[连载剧集][大陆][春风十里不如你/Bei.Jing.Bei.Jing][E33-E35][1080p/WEB-DL/H264.AAC-MTTV][国语/中文字幕]"  href="details.php?id=9732&amp;hit=1"><b>[连载剧集][大陆][春风十里不如你/Bei.Jing.Bei.Jing][E33-E35][1080p/WEB-DL/H264.AAC-MTTV][国语/中文字幕]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[连载剧集][MP4][1080P]春风十里不如你 第33-35集 主演：周冬雨 / 张一山 / 尤靖茹 / 陈奕龙 / 魏健隆</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9732"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark29"  href="javascript: bookmark(9732,29);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9732&amp;hit=1&amp;dllist=1#seeders">3</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9732"><b>18</b></a></td>
+<td><b><a  href="viewsnatches.php?all=1&id=9732"><b>1</b></a></td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3758" class='EliteUser_Name' ><b>三月1104</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9732&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-08-29 18:24:32">9天20时</span>&nbsp;&nbsp;1.43GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=402"><img class="c_tvseries" src="pic/cattrans.gif" alt="电视剧" title="电视剧" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[连载剧集][大陆][春风十里不如你/Bei.Jing.Bei.Jing][E30-E32][1080p/WEB-DL/H264.AAC-MTTV][国语/中文字幕]"  href="details.php?id=9731&amp;hit=1"><b>[连载剧集][大陆][春风十里不如你/Bei.Jing.Bei.Jing][E30-E32][1080p/WEB-DL/H264.AAC-MTTV][国语/中文字幕]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[连载剧集][MP4][1080P]春风十里不如你 第30-32集 主演：周冬雨 / 张一山 / 尤靖茹 / 陈奕龙 / 魏健隆</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9731"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark30"  href="javascript: bookmark(9731,30);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9731&amp;hit=1&amp;dllist=1#seeders">4</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9731"><b>16</b></a></td>
+<td><b><a  href="viewsnatches.php?all=1&id=9731"><b>1</b></a></td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3758" class='EliteUser_Name' ><b>三月1104</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9731&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-08-29 18:15:12">9天20时</span>&nbsp;&nbsp;1.74GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=402"><img class="c_tvseries" src="pic/cattrans.gif" alt="电视剧" title="电视剧" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[连载剧集][欧美][冰与火之歌：权力的游戏 第七季][Game.of.Thrones.S07E07.The.Dragon.and.the.Wolf.720p.AMZN.WEB-DL.DDP5.1.H.264-GoT][2017.07]"  href="details.php?id=9730&amp;hit=1"> <b>[<font class='hot'>热门</font>]</b><b>[连载剧集][欧美][冰与火之歌：权力的游戏 第七季][Game.of.Thrones.S07E07.The.Dragon.and.the.Wolf.720p.AMZN.WEB-DL.DDP5.1.H.264-GoT][2017.07]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b><b>[<font class='striking'>字幕</font>]</b>[连载剧集][MKV][720P][英语/外挂中文字幕(附件区)]</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9730"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark31"  href="javascript: bookmark(9730,31);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9730&amp;hit=1&amp;dllist=1#seeders">11</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9730"><b>64</b></a></td>
+<td><b><a  href="viewsnatches.php?all=1&id=9730"><b>3</b></a></td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=526" class='ExtremeUser_Name' style="color:#FF0000"><b>卫宫士郎</b></a></span></div>
+<div class="row">
+<b><a href="details.php?id=9730&amp;hit=1&amp;cmtpage=1#startcomments" >3</a></b>&nbsp;&nbsp;<span title="2017-08-28 20:12:31">10天18时</span>&nbsp;&nbsp;1.70GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=405"><img class="c_anime" src="pic/cattrans.gif" alt="动漫" title="动漫" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[连载动画][日韩][7月新番][Nekomoe kissaten][来自深渊][Made in Abyss][08][TVRip_720p][CHS][2017.07]"  href="details.php?id=9729&amp;hit=1"><b>[连载动画][日韩][7月新番][Nekomoe kissaten][来自深渊][Made in Abyss][08][TVRip_720p][CHS][2017.07]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[连载剧集][MP4][720P][Made in Abyss][メイドインアビス]</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9729"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark32"  href="javascript: bookmark(9729,32);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9729&amp;hit=1&amp;dllist=1#seeders">1</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9729"><b>4</b></a></td>
+<td>0</td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=526" class='ExtremeUser_Name' style="color:#FF0000"><b>卫宫士郎</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9729&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-08-28 19:49:45">10天18时</span>&nbsp;&nbsp;162.94MB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=401"><img class="c_movies" src="pic/cattrans.gif" alt="电影" title="电影" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[电影正篇][欧美][雪国列车][2013]"  href="details.php?id=9712&amp;hit=1"><b>[电影正篇][欧美][雪国列车][2013]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[RMVB][1024*576][剧情 / 动作 / 科幻 / 灾难][英语 / 韩语 / 日语 / 法语 / 捷克语]</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9712"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark33"  href="javascript: bookmark(9712,33);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9712&amp;hit=1&amp;dllist=1#seeders">2</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9712"><b>23</b></a></td>
+<td>0</td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=5169" class='User_Name' ><b>听风语</b></a><img class="hrwarned" src="pic/trans.gif" title="Hrwarned@27" style='margin-left: 2pt' /></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9712&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-08-26 09:07:02">13天5时</span>&nbsp;&nbsp;1.36GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=402"><img class="c_tvseries" src="pic/cattrans.gif" alt="电视剧" title="电视剧" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[连载剧集][大陆][春风十里不如你/Bei.Jing.Bei.Jing][E27-E29][1080p/WEB-DL/MP4][国语/中文字幕]"  href="details.php?id=9707&amp;hit=1"><b>[连载剧集][大陆][春风十里不如你/Bei.Jing.Bei.Jing][E27-E29][1080p/WEB-DL/MP4][国语/中文字幕]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[连载剧集][MP4][1080P]春风十里不如你 第27-29集 主演：周冬雨 / 张一山 / 尤靖茹 / 陈奕龙 / 魏健隆</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9707"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark34"  href="javascript: bookmark(9707,34);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9707&amp;hit=1&amp;dllist=1#seeders">3</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9707"><b>16</b></a></td>
+<td><b><a  href="viewsnatches.php?all=1&id=9707"><b>2</b></a></td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3758" class='EliteUser_Name' ><b>三月1104</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9707&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-08-24 19:16:29">14天19时</span>&nbsp;&nbsp;1.69GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=402"><img class="c_tvseries" src="pic/cattrans.gif" alt="电视剧" title="电视剧" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[连载剧集][大陆][春风十里不如你/Bei.Jing.Bei.Jing][E21-E26][1080p/WEB-DL/MP4][国语/中文字幕]"  href="details.php?id=9706&amp;hit=1"><b>[连载剧集][大陆][春风十里不如你/Bei.Jing.Bei.Jing][E21-E26][1080p/WEB-DL/MP4][国语/中文字幕]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[连载剧集][MP4][1080P]春风十里不如你 第21-26集 主演：周冬雨 / 张一山 / 尤靖茹 / 陈奕龙 / 魏健隆</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9706"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark35"  href="javascript: bookmark(9706,35);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9706&amp;hit=1&amp;dllist=1#seeders">3</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9706"><b>13</b></a></td>
+<td><b><a  href="viewsnatches.php?all=1&id=9706"><b>3</b></a></td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3758" class='EliteUser_Name' ><b>三月1104</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9706&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-08-24 19:02:51">14天19时</span>&nbsp;&nbsp;4.05GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=402"><img class="c_tvseries" src="pic/cattrans.gif" alt="电视剧" title="电视剧" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[连载剧集][大陆][春风十里不如你/Bei.Jing.Bei.Jing][2017][E16-E20][1080p/WEB-DL/MP4]"  href="details.php?id=9693&amp;hit=1"><b>[连载剧集][大陆][春风十里不如你/Bei.Jing.Bei.Jing][2017][E16-E20][1080p/WEB-DL/MP4]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[连载剧集][MP4][1080P]春风十里不如你 第16-20集 主演：周冬雨 / 张一山 / 尤靖茹 / 陈奕龙 / 魏健隆</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9693"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark36"  href="javascript: bookmark(9693,36);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9693&amp;hit=1&amp;dllist=1#seeders">3</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9693"><b>14</b></a></td>
+<td><b><a  href="viewsnatches.php?all=1&id=9693"><b>1</b></a></td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3758" class='EliteUser_Name' ><b>三月1104</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9693&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-08-22 22:21:31">16天16时</span>&nbsp;&nbsp;2.78GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=401"><img class="c_movies" src="pic/cattrans.gif" alt="电影" title="电影" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[电影正篇][大陆][悟空传][2017]"  href="details.php?id=9692&amp;hit=1"> <b>[<font class='hot'>热门</font>]</b><b>[电影正篇][大陆][悟空传][2017]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[MP4][720P][内嵌中英文字幕]</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9692"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark37"  href="javascript: bookmark(9692,37);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9692&amp;hit=1&amp;dllist=1#seeders">13</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9692"><b>104</b></a></td>
+<td><b><a  href="viewsnatches.php?all=1&id=9692"><b>1</b></a></td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=4512" class='CrazyUser_Name' ><b>林西亮仔</b></a></span></div>
+<div class="row">
+<b><a href="details.php?id=9692&amp;hit=1&amp;cmtpage=1#startcomments" >1</a></b>&nbsp;&nbsp;<span title="2017-08-22 17:57:54">16天20时</span>&nbsp;&nbsp;2.05GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=402"><img class="c_tvseries" src="pic/cattrans.gif" alt="电视剧" title="电视剧" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[连载剧集][欧美]《权利的游戏》Game.of.Thrones.S07E06.1080p.WEB.h264-TBS"  href="details.php?id=9686&amp;hit=1"> <b>[<font class='hot'>热门</font>]</b><b>[连载剧集][欧美]《权利的游戏》Game.of.Thrones.S07E06.1080p.WEB.h264-TBS</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b><b>[<font class='striking'>字幕</font>]</b>[连载剧集][MKV][1080P]权利的游戏第七季第6集，附件中英字幕</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9686"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark38"  href="javascript: bookmark(9686,38);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9686&amp;hit=1&amp;dllist=1#seeders">7</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9686"><b>72</b></a></td>
+<td>0</td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=770" class='PowerUser_Name' ><b>liu</b></a></span></div>
+<div class="row">
+<b><a href="details.php?id=9686&amp;hit=1&amp;cmtpage=1#startcomments" >3</a></b>&nbsp;&nbsp;<span title="2017-08-21 13:46:12">18天0时</span>&nbsp;&nbsp;1.87GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=403"><img class="c_tvshows" src="pic/cattrans.gif" alt="综艺" title="综艺" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[综艺娱乐][大陆]20170820-极限挑战 第7期"  href="details.php?id=9679&amp;hit=1"><b>[综艺娱乐][大陆]20170820-极限挑战 第7期</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br />[MP4][1080P]“猪羊组合”逆袭黄磊</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9679"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark39"  href="javascript: bookmark(9679,39);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9679&amp;hit=1&amp;dllist=1#seeders">2</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9679"><b>22</b></a></td>
+<td>0</td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=770" class='PowerUser_Name' ><b>liu</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9679&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-08-21 10:10:02">18天4时</span>&nbsp;&nbsp;2.52GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=410"><img class="c_pcgames" src="pic/cattrans.gif" alt="游戏" title="游戏" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[单机游戏][日韩][英雄传说：闪之轨迹][RPG][简中、日文]"  href="details.php?id=9672&amp;hit=1"><b>[单机游戏][日韩][英雄传说：闪之轨迹][RPG][简中、日文]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br />[Windows][Falcom]</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9672"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark40"  href="javascript: bookmark(9672,40);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9672&amp;hit=1&amp;dllist=1#seeders">1</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9672"><b>3</b></a></td>
+<td><b><a  href="viewsnatches.php?all=1&id=9672"><b>3</b></a></td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=3326" class='PowerUser_Name' ><b>Winterzza</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9672&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-08-19 22:57:22">19天15时</span>&nbsp;&nbsp;8.17GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=405"><img class="c_anime" src="pic/cattrans.gif" alt="动漫" title="动漫" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[连载动画][日韩][7月新番][FLsnow][来自深渊][Made in Abyss][07][TVRip_720p][CHS][2017.07]"  href="details.php?id=9669&amp;hit=1"><b>[连载动画][日韩][7月新番][FLsnow][来自深渊][Made in Abyss][07][TVRip_720p][CHS][2017.07]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[连载剧集][MP4][720P][Made in Abyss][メイドインアビス]</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9669"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark41"  href="javascript: bookmark(9669,41);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9669&amp;hit=1&amp;dllist=1#seeders">1</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9669"><b>3</b></a></td>
+<td>0</td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=526" class='ExtremeUser_Name' style="color:#FF0000"><b>卫宫士郎</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9669&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-08-19 16:04:06">19天22时</span>&nbsp;&nbsp;133.27MB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=405"><img class="c_anime" src="pic/cattrans.gif" alt="动漫" title="动漫" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[连载动画][日韩][7月新番][FLsnow][来自深渊][Made in Abyss][06][TVRip_720p][CHS][2017.07]"  href="details.php?id=9668&amp;hit=1"><b>[连载动画][日韩][7月新番][FLsnow][来自深渊][Made in Abyss][06][TVRip_720p][CHS][2017.07]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[连载剧集][MP4][720P][Made in Abyss][メイドインアビス]</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9668"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark42"  href="javascript: bookmark(9668,42);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9668&amp;hit=1&amp;dllist=1#seeders">1</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9668"><b>3</b></a></td>
+<td>0</td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=526" class='ExtremeUser_Name' style="color:#FF0000"><b>卫宫士郎</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9668&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-08-19 16:02:45">19天22时</span>&nbsp;&nbsp;143.38MB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=405"><img class="c_anime" src="pic/cattrans.gif" alt="动漫" title="动漫" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[动画合集][日韩][ONE PIECE 海贼王][mkv高清]1-20"  href="details.php?id=9619&amp;hit=1"><b>[动画合集][日韩][ONE PIECE 海贼王][mkv高清]1-20</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[连载剧集][MKV][1080P][ONE PIECE][ワンーピス]</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9619"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark43"  href="javascript: bookmark(9619,43);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9619&amp;hit=1&amp;dllist=1#seeders">1</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9619"><b>4</b></a></td>
+<td>0</td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=1406" class='ExtremeUser_Name' ><b>rui1983914</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9619&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-08-16 18:06:50">22天20时</span>&nbsp;&nbsp;11.13GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=404"><img class="c_doc" src="pic/cattrans.gif" alt="纪录片" title="纪录片" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[其他][日韩]NHK纪录片：731部队的真相 “精英”医者与人体试验"  href="details.php?id=9615&amp;hit=1"><b>[其他][日韩]NHK纪录片：731部队的真相 “精英”医者与人体试验</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[完结剧集][MP4][720P]The Truth of Unit 731</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9615"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark44"  href="javascript: bookmark(9615,44);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9615&amp;hit=1&amp;dllist=1#seeders">1</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9615"><b>18</b></a></td>
+<td><b><a  href="viewsnatches.php?all=1&id=9615"><b>1</b></a></td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=1527" class='ExtremeUser_Name' ><b>roman</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9615&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-08-16 13:13:03">23天1时</span>&nbsp;&nbsp;549.99MB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=401"><img class="c_movies" src="pic/cattrans.gif" alt="电影" title="电影" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[电影正篇][欧美][银河护卫队2][Guardians of the Galaxy Vol. 2 2017 720p BluRay DD5.1 x264-DON][动作/科幻/冒险][北美]  "  href="details.php?id=9602&amp;hit=1"><b>[电影正篇][欧美][银河护卫队2][Guardians of the Galaxy Vol. 2 2017 720p BluRay DD5.1 x264-DON][动作/科幻/冒险][北美]  </b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[MKV][1080P]银河护卫队2/星际异攻队2/银河守护队2 | 金曲串烧 | 内封简繁中字 | Top组作品~</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9602"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark45"  href="javascript: bookmark(9602,45);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9602&amp;hit=1&amp;dllist=1#seeders">5</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9602"><b>57</b></a></td>
+<td><b><a  href="viewsnatches.php?all=1&id=9602"><b>1</b></a></td>
+<td  COLSPAN ="3" align="center"><div class="row"><i>匿名</i></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9602&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-08-14 23:29:02">24天14时</span>&nbsp;&nbsp;6.76GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=403"><img class="c_tvshows" src="pic/cattrans.gif" alt="综艺" title="综艺" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[综艺娱乐][大陆]《极限挑战III》第6期20170813：致敬最可爱的人！"  href="details.php?id=9600&amp;hit=1"><b>[综艺娱乐][大陆]《极限挑战III》第6期20170813：致敬最可爱的人！</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br />[MP4][1080P]</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9600"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark46"  href="javascript: bookmark(9600,46);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9600&amp;hit=1&amp;dllist=1#seeders">1</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9600"><b>13</b></a></td>
+<td><b><a  href="viewsnatches.php?all=1&id=9600"><b>1</b></a></td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=770" class='PowerUser_Name' ><b>liu</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9600&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-08-14 14:44:50">24天23时</span>&nbsp;&nbsp;2.83GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=402"><img class="c_tvseries" src="pic/cattrans.gif" alt="电视剧" title="电视剧" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[连载剧集][欧美][冰与火之歌：权力的游戏 第七季][Game.of.Thrones.S07E05.720p.HDTV.x264-AVS][eztv][2017.07]"  href="details.php?id=9598&amp;hit=1"> <b>[<font class='hot'>热门</font>]</b><b>[连载剧集][欧美][冰与火之歌：权力的游戏 第七季][Game.of.Thrones.S07E05.720p.HDTV.x264-AVS][eztv][2017.07]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b><b>[<font class='striking'>字幕</font>]</b>[连载剧集][MKV][720P][英语/外挂中文字幕(附件区)]</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9598"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark47"  href="javascript: bookmark(9598,47);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9598&amp;hit=1&amp;dllist=1#seeders">5</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9598"><b>88</b></a></td>
+<td><b><a  href="viewsnatches.php?all=1&id=9598"><b>3</b></a></td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=526" class='ExtremeUser_Name' style="color:#FF0000"><b>卫宫士郎</b></a></span></div>
+<div class="row">
+<b><a href="details.php?id=9598&amp;hit=1&amp;cmtpage=1#startcomments" >1</a></b>&nbsp;&nbsp;<span title="2017-08-14 11:48:34">25天2时</span>&nbsp;&nbsp;959.97MB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=401"><img class="c_movies" src="pic/cattrans.gif" alt="电影" title="电影" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><b> [<font class='new'>新</font>]</b><a title="[电影正篇][欧美][钢铁侠3].Iron.Man.3.2013.720p.中英双字"  href="details.php?id=9576&amp;hit=1"><b>[电影正篇][欧美][钢铁侠3].Iron.Man.3.2013.720p.中英双字</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b>[MKV][720P][漫威][Marvel]</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9576"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark48"  href="javascript: bookmark(9576,48);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9576&amp;hit=1&amp;dllist=1#seeders">1</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9576"><b>20</b></a></td>
+<td>0</td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=1406" class='ExtremeUser_Name' ><b>rui1983914</b></a></span></div>
+<div class="row">
+<a href="comment.php?action=add&amp;pid=9576&amp;type=torrent" title="添加评论">0</a>&nbsp;&nbsp;<span title="2017-08-09 02:32:54">1月0天</span>&nbsp;&nbsp;3.19GB</div></td></tr><tr>
+<td valign="middle"><a href="?cat=402"><img class="c_tvseries" src="pic/cattrans.gif" alt="电视剧" title="电视剧" style="background-image: url(pic/category/cugb/allicobgs.png);" /></a></td>
+<td><table width="100%" ><tr><td><a title="[连载剧集][欧美][冰与火之歌：权力的游戏 第七季][Game.of.Thrones.S07E04.720p.HDTV.x264-AVS][eztv][2017.07]"  href="details.php?id=9558&amp;hit=1"> <b>[<font class='hot'>热门</font>]</b><b>[连载剧集][欧美][冰与火之歌：权力的游戏 第七季][Game.of.Thrones.S07E04.720p.HDTV.x264-AVS][eztv][2017.07]</b></a> <img class="pro_50pctdown2up" src="pic/trans.gif" title="2X 50%" /><b><font class='twouphalfdown'></font></b><br /> <b>[<font class='recommended'>豆瓣</font>]</b><b>[<font class='striking'>字幕</font>]</b>[连载剧集][MKV][720P][英语/外挂中文字幕(附件区)]</td><td style="text-align:right;" valign="middle"><a href="download.php?id=9558"><img class="download" src="pic/trans.gif" style='padding-bottom: 2px;' alt="download" title="下载本种" /></a><br /><a id="bookmark49"  href="javascript: bookmark(9558,49);" ><img class="delbookmark" src="pic/trans.gif" alt="Unbookmarked" title="收藏" /></a></td>
+</tr></table></td><td><b><a  href="details.php?id=9558&amp;hit=1&amp;dllist=1#seeders">6</a></b></td>
+<td>0</td>
+<td><b><a  href="viewsnatches.php?id=9558"><b>85</b></a></td>
+<td>0</td>
+<td  COLSPAN ="3" align="center"><div class="row"><span class="nowrap"><a  href="userdetails.php?id=526" class='ExtremeUser_Name' style="color:#FF0000"><b>卫宫士郎</b></a></span></div>
+<div class="row">
+<b><a href="details.php?id=9558&amp;hit=1&amp;cmtpage=1#startcomments" >2</a></b>&nbsp;&nbsp;<span title="2017-08-07 12:17:22">1月2天</span>&nbsp;&nbsp;0.99GB</div></td></tr></table><p align="center"> <a href="?spstate=2" target="_self" title="查看免费种子"><font class='free'><b>免费</b></font></a> | <a href="?spstate=3" target="_self" title="查看两倍上传量种子"><font class='twoup'><b>2x上传</b></font></a> | <a href="?spstate=4" target="_self" title="查看免费且两倍上传种子"><font class='twoupfree'><b>免费&amp;2x上传</b></font></a> | <a href="?spstate=5" target="_self" title="查看50%下载种子"><font class='halfdown'><b>50%下载</b></font></a> | <a href="?spstate=6" target="_self" title="查看50%下载且两倍上传种子"><font class='twouphalfdown'><b>50%下载&amp;2x上传</b></font></a> | <a href="?spstate=7" target="_self" title="查看30%下载种子"><font class='thirtypercent'><b>30%下载</b></font></a></p>
+<p align="center"><font class="gray"><b>1&nbsp;-&nbsp;50</b></font> | <a href="?inclbookmarked=0&amp;incldead=1&amp;spstate=0&amp;page=1"><b>51&nbsp;-&nbsp;100</b></a> | <a href="?inclbookmarked=0&amp;incldead=1&amp;spstate=0&amp;page=2"><b>101&nbsp;-&nbsp;150</b></a> | ... | <a href="?inclbookmarked=0&amp;incldead=1&amp;spstate=0&amp;page=34"><b>1701&nbsp;-&nbsp;1750</b></a> | <a href="?inclbookmarked=0&amp;incldead=1&amp;spstate=0&amp;page=35"><b>1751&nbsp;-&nbsp;1800</b></a> | <a href="?inclbookmarked=0&amp;incldead=1&amp;spstate=0&amp;page=36"><b>1801&nbsp;-&nbsp;1803</b></a><br /><font class="gray"><b title="Alt+Pageup">&lt;&lt;&nbsp;上一页</b></font>&nbsp;&nbsp;&nbsp;&nbsp;<a href="?inclbookmarked=0&amp;incldead=1&amp;spstate=0&amp;page=5"><b>随便看看</b></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="?inclbookmarked=0&amp;incldead=1&amp;spstate=0&amp;page=1"><b title="Alt+Pagedown">下一页&nbsp;&gt;&gt;</b></a></p>
+</td></tr></table><div id="footer"><div style="margin-top: 10px;" align="center"><a  style="display: none;" id="lightbox"  class="lightbox"  onclick="Return();" onmousewheel="return false;"  ondragstart='return false;' onselectstart='return false;'></a>
+<div style="display: none;" id="curtain" class="curtain" onclick="Return();" onmousewheel="return false;" ></div><a href="aboutnexus.php" target="_self">关于本站 &copy; CUGB PT</a> 2016-2017
+<span style="display: none"><img src="http://www.baidu.com/search/img/logo.gif?0.2790255264063" onError="javascript:linestate('error')" onLoad="javascript:linestate('success');"/></span><script type="text/javascript" src="styles/cugbpt/theme.js"></script>	<script type="text/javascript" src="javascript/scrollcontrol.js" ></script>
+	<!--[if IE]><script type="text/javascript" src="javascript/letskillie6.zh_CN.js" ></script><![endif]-->
+	<!--[if (gt IE 6)|!(IE)]><!-->
+	<script>
+    if (!!window.ActiveXObject || "ActiveXObject" in window)
+        document.write('<script type="text/javascript" src="javascript/letskillie6.zh_CN.js" ><\/script>');
+	</script>
+		<!--<![endif]-->
+<br /><br />[page created in <b> 0.017330 @ 0.051186 </b>sec with <b>11</b> db queries, <b>46</b> reads and <b>9</b> writes of memcached and <b>3.23MB</b> ram]</div>
+<br /><br />
+<script type="text/javascript">
+//<![CDATA[
+var maxpage=36;
+var currentpage=0;
+//]]>
+</script>
+<script>jQuery.get('sendmail.php');</script></div></div></div></body></html>
